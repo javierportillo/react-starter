@@ -26,7 +26,10 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [['env', {modules: false}], 'react'],
-                        plugins: ['check-es2015-constants']
+                        plugins: [
+                            'check-es2015-constants',
+                            'transform-object-rest-spread'
+                        ]
                     }
                 }
             },
