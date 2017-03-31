@@ -6,6 +6,12 @@
   "repository": "https://github.com/javierportillo/react-starter.git",
   "author": "Javier Portillo <javiermarquezportillo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "clear": "rimraf ./dist/",
+    "dev": "webpack",
+    "build": "NODE_ENV=production webpack -p"
+  },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -15,6 +21,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.2",
+    "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
